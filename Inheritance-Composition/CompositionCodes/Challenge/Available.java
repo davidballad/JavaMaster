@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Available{
   private boolean isReserved;
-    //private Room nameTag;      /* TODO i dont know how to call the default set value from other classes. research TODO */
+    //private Room nameTag;      /* TODO: i dont know how to call the default set value from other classes. research */
   Scanner scan = new Scanner(System.in);
 
 
