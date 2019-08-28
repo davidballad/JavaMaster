@@ -13,13 +13,13 @@ public class Arr{
       otharr[i] = i+1 ;
     }
 
-    System.out.println(darr[5]);
-    System.out.println(myArray[8]);
-    System.out.println(otharr[2]);
+    System.out.println("double array is " + darr[5]);
+    System.out.println("my array is " + myArray[8]);
+    System.out.println("other array is " + otharr[2]);
 
     printArray(darr);
 
-    System.out.println("Average " + getAverage(darr));
+    System.out.println("Average is" + getAverage(darr));
 
   }
 
