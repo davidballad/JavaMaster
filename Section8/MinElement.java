@@ -12,7 +12,7 @@ public class MinElement{
       System.out.println("The minimum value in your array is: " + findMin(myArray)); 
    }
 
-   public static int[] readNums(int count){
+   private static int[] readNums(int count){
       System.out.println("Please enter " + count + " values\r");
       int[] array = new int[count];
 
@@ -24,10 +24,7 @@ public class MinElement{
 
    public static int findMin(int[] array){
       //System.out.println("The copy of the array is: " + Arrays.toString(min));     // TODO: this line is not neccesary, i was just testing.
-      int min = 0;
-      boolean flag = true;
-      while (flag) {
-         flag = false;
+      int min = Integer.MAX_VALUE;
          for (int i = 0; i < array.length-1; i++) {
             if (array[i]<array[i+1]) {
                min = array[i];
@@ -35,7 +32,6 @@ public class MinElement{
                min = array[i+1];
             } 
          }
-      }
       return min;
    }
 }
