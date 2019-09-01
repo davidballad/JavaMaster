@@ -6,6 +6,13 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - ArrPractice",
+         "request": "launch",
+         "mainClass": "ArrPractice",
+         "projectName": "Section8_f6952aa0"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - Arr2",
          "request": "launch",
          "mainClass": "Arr2",

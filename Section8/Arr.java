@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 
 public class Arr{
 
@@ -17,9 +17,11 @@ public class Arr{
     System.out.println("my array is " + myArray[8]);
     System.out.println("other array is " + otharr[2]);
 
+    System.out.println("trying the \"toString:\" " + Arrays.toString(darr));
+    
     printArray(darr);
 
-    System.out.println("Average is" + getAverage(darr));
+    System.out.println("Average is " + getAverage(darr));
 
   }
 
