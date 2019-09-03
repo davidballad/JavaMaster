@@ -7,11 +7,15 @@ public class ArrayChal{
 
   public static void main(String[] args) {
 
-    int[] array = getValues(6);
+    int[] array = getValues(4);
     
 
     int[] order = sortArray(array);
-    printArray(order);
+    printArray(order); 
+
+    reverseArray(array);
+    System.out.println("Reverse array is: " + Arrays.toString(array));
+
   }
 
   public static int[] getValues(int num){
@@ -38,7 +42,8 @@ public class ArrayChal{
     // for (int i = 0; i < array.length; i++) {
     //   sortArr[i] = array[i];          //we are duplicating the arrays
     // }
-    //Different way to copy an array below
+
+    /* Different way to copy an array below */
     int [] sortArr = Arrays.copyOf(array, array.length);
     
       while (flag) {
@@ -56,5 +61,15 @@ public class ArrayChal{
 
   }
 
+      private static void reverseArray(int[] array){
+        int temp;
+        int half = array.length /2;
+        int mirror = array.length-1;
+          for (int i = 0; i < half; i++) {
+            temp = array[mirror-i];
+            array[mirror-i] = array[i];
+            array[i] = temp;
+          }
 
+      }
 }

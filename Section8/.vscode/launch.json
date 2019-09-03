@@ -6,6 +6,34 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - Main",
+         "request": "launch",
+         "mainClass": "ArrayLists.Main",
+         "projectName": "Section8_923db0fb"
+      },
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - List",
+         "request": "launch",
+         "mainClass": "Main",
+         "projectName": "Section8_923db0fb"
+      },
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - Main",
+         "request": "launch",
+         "mainClass": "Lists.Main",
+         "projectName": "Section8_923db0fb"
+      },
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - Arr",
+         "request": "launch",
+         "mainClass": "Arr",
+         "projectName": "Section8_923db0fb"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - MinElement",
          "request": "launch",
          "mainClass": "MinElement",
