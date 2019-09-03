@@ -18,8 +18,6 @@ public class Main{
       System.out.println("\t5. Modify item");
       System.out.println("\t6. Exit");
 
-
-      
       boolean exit = false;
       while (!exit) {
          System.out.println("Enter your choice: ");
@@ -48,7 +46,7 @@ public class Main{
             break;
          
             default:
-            System.out.println("Good Bye");
+            System.out.println("* Good Bye *");
                exit = true;
                break;
          }
@@ -62,7 +60,7 @@ public class Main{
    }
 
    public static void modifyItem(){
-      System.out.println("What item number would you like to modify?");
+      System.out.println("What item NUMBER would you like to modify?");
       int position = scan.nextInt();
       scan.nextLine();
       System.out.println("Enter new value:");
@@ -71,17 +69,17 @@ public class Main{
    }
 
    public static void searchItem(){
-      System.out.println("Type item to be searched:");
+      System.out.println("Type item to be search:");
       String text = scan.nextLine();
       if (david.search(text) != null) {
          System.out.println("Item \"" + text + "\" Found!");
       } else {
-         System.out.println("Item is NOT in your list!");
+         System.out.println("Item + \"" + text + "\" is NOT in your list!");
       } 
    } 
 
    public static void removeItem(){
-      System.out.println("What item number would you like to delete?");
+      System.out.println("What item NUMBER would you like to delete?");
       int position = scan.nextInt();
       scan.nextLine();
       david.remove(position-1);
