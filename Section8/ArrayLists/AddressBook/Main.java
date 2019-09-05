@@ -1,4 +1,5 @@
-import java.awt.DisplayMode;
+package ArrayLists.AddressBook;
+
 import java.util.Scanner;
 
 public class Main{
