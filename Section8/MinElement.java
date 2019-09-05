@@ -23,7 +23,7 @@ public class MinElement{
    }
 
    public static int findMin(int[] array){
-      //System.out.println("The copy of the array is: " + Arrays.toString(min));     // TODO: this line is not neccesary, i was just testing.
+      //System.out.println("The copy of the array is: " + Arrays.toString(min));     // this line is not neccesary, i was just testing.
       int min = Integer.MAX_VALUE;
          for (int i = 0; i < array.length-1; i++) {
             if (array[i]<array[i+1]) {
